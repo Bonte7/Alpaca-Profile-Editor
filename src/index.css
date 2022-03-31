@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+}
+
+/*--------------- Alpaca Frame ------------------*/
+
+.alpaca-frame {
+    width: 600px;
+    height: 600px;
+    margin-top: 50px;
+    margin-left: 50px;
+    position: relative;
+    background-color: darkblue;
+}
+
+/*--------------- Alpaca Features ------------------*/
+
+.neck {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.nose {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.mouth {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.leg {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.hair {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.eyes {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.ears {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.accessory {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/*--------------- Alpaca Ear Buttons ------------------*/
+
+.buttons {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+}
+
+.ear-button-container {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ear-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/*--------------- Button Designs ------------------*/
+
+button {
+    transition-duration: 0.4s;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  
+button:hover {
+    background-color: lightblue;
+    color: black;
+  }
