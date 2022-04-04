@@ -1,3 +1,7 @@
+This project is an Alpaca profile image editor. You can randomzie the Alpaca's features in v1. Coming soon will be the ability to choose different features such as ears, eyes, arms, accessories, and hair types. I will also add downloadable functionality so users can download their Alpaca to use it as a profile image on any app they choose!
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
