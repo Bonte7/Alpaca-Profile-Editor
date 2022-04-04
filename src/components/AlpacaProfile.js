@@ -12,7 +12,7 @@ let hair = `images/hair/${props.hair}.png`
 let leg = `images/leg/${props.leg}.png`
 let mouth = `images/mouth/${props.mouth}.png`
 let neck = `images/neck/${props.neck}.png`
-let nose = `images/${props.nose}.png`
+let nose = props.nose
 
 
     return(
