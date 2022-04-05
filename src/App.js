@@ -3,6 +3,12 @@ import alpacaConfig from './AlpacaConfig';
 import React, {useState} from 'react';
 import Buttons from './components/Buttons';
 import ButtonList from './components/ButtonList';
+import * as htmlToImage from 'html-to-image';
+import { toPng, toJpeg, toBlob, toPixelData, toSvg } from 'html-to-image';
+import download from 'downloadjs';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDownload, faShuffle} from '@fortawesome/free-solid-svg-icons';
+
 
 function App() {
 
@@ -54,9 +60,6 @@ function App() {
   //global button click handler used for feature buttons.
   function handleButtonClick(event) {
 
-    console.log(event.target.value)
-    console.log(event.target.name)
-
     setAlpacaFeatures(prevAlpacaFeatures => {
       return {
         ...prevAlpacaFeatures,
@@ -70,10 +73,28 @@ function App() {
     setFeatureButtons(event.target.name);
   }
 
+  function download() {
+    const element = document.getElementById("alpaca-image");
+    toPng(element).then((dataUrl) => {
+      const link = document.createElement("a")
+      link.download = "alpaca.jpeg";
+      link.href = dataUrl;
+      link.click();
+      link.remove();
+    });
+  }
 
   return (
+
+    <div className="top-div">
+    <header className="navbar">
+      <h1>Customize Your Alpaca!</h1>
+    </header>
+
     <div className="container">
+
       <div>
+      <div id="alpaca-image">
       <AlpacaProfile 
         ears={alpacaFeatures.ears}
         eyes={alpacaFeatures.eyes}
@@ -84,7 +105,9 @@ function App() {
         accessories={alpacaFeatures.accessories}
         nose={"/images/nose.png"}
       />
-      <button className="randomize" onClick={randomize}>Randomzie</button>
+      </div>
+      <button className="randomize" onClick={randomize}>Randomzie <FontAwesomeIcon icon={faShuffle} /></button>
+      <button className="download" onClick={download}>Download <FontAwesomeIcon icon={faDownload} /></button>
       </div>
 
       <section>
@@ -103,6 +126,7 @@ function App() {
         />
       </div>
       </section>
+    </div>
     </div>
   );
 }

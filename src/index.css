@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Fredoka', sans-serif;
 }
 
 .container {
@@ -9,12 +11,27 @@ body {
     margin-bottom: 100px;
 }
 
+.navbar {
+    padding: 30px;
+    text-align: center;
+    background-color: #008CBA;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 4px;
+    width: 100%;
+    font-family: 'Fredoka One', cursive;
+}
+
+.top-div {
+    width: 100%;
+}
+
 /*--------------- Alpaca Frame ------------------*/
 
 .alpaca-frame {
     width: 500px;
     height: 500px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 50px;
     position: relative;
     background-color: darkblue;
@@ -141,6 +158,9 @@ button {
     margin-top: 20px;
     width: 150px;
     height: 60px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
   }
   
 button:hover {
@@ -150,5 +170,9 @@ button:hover {
 
   .randomize {
       margin-left: 50px;
-      width: 500px;
+      width: 240px;
+  }
+
+  .download {
+    width: 240px;
   }
