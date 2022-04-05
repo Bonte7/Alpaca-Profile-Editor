@@ -1,7 +1,9 @@
 This project is an Alpaca profile image editor. You can randomzie the Alpaca's features or choose from specific options. Once finished, you can download a PNG of the alpaca and use it on any app of your choice as a profile image. 
 
 Required dependencies for download image functionality:
+
 html-to-image: https://www.npmjs.com/package/html-to-image
+
 downloadjs: https://www.npmjs.com/package/downloadjs
 
 Also added font awesome depenencies 
