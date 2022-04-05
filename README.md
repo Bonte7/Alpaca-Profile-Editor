@@ -1,6 +1,12 @@
 This project is an Alpaca profile image editor. You can randomzie the Alpaca's features in v1. Coming soon will be the ability to choose different features such as ears, eyes, arms, accessories, and hair types. I will also add downloadable functionality so users can download their Alpaca to use it as a profile image on any app they choose!
 
+Required dependencies for download image functionality:
+html-to-image: https://www.npmjs.com/package/html-to-image
+downloadjs: https://www.npmjs.com/package/downloadjs
 
+Also added font awesome depenencies 
+
+------------------------------------------------------------------
 
 # Getting Started with Create React App
 
