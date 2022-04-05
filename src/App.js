@@ -54,6 +54,9 @@ function App() {
   //global button click handler used for feature buttons.
   function handleButtonClick(event) {
 
+    console.log(event.target.value)
+    console.log(event.target.name)
+
     setAlpacaFeatures(prevAlpacaFeatures => {
       return {
         ...prevAlpacaFeatures,

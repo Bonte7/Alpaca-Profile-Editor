@@ -8,7 +8,7 @@ const alpacaConfig = [
 		{
 			id: 0,
 		  name: "Hair",
-		  items: ["default", "bang", "curls", "elegant", "fancy", "quiff", "short"],
+		  items: ["default", "bang", "curls", "elegant", "quiff", "short"],
 		},
 		{
 			id: 1,
